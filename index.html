@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velvet Crumbs | Handmade Cakes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Velvet<span>Crumbs</span>
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#about">Our Story</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="order-nav" onclick="openOrder()">
+        Order a Cake
+    </button>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">HANDCRAFTED WITH LOVE</p>
+
+        <h1>
+            Cakes made for
+            <span>beautiful moments.</span>
+        </h1>
+
+        <p class="hero-text">
+            Dreamy cakes, delicate details and unforgettable flavours,
+            freshly baked for every celebration.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#cakes" class="primary-btn">
+                Explore Cakes
+            </a>
+
+            <button class="secondary-btn" onclick="openOrder()">
+                Custom Order →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="cake-circle">
+
+            <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+            alt="Beautiful decorated cake">
+
+        </div>
+
+        <div class="floating-card">
+            <span>★★★★★</span>
+            <strong>4.9 / 5</strong>
+            <small>Happy customers</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CAKES -->
+
+<section class="cakes-section" id="cakes">
+
+    <div class="section-heading">
+
+        <p class="small-title">OUR SIGNATURE COLLECTION</p>
+
+        <h2>A little slice of happiness.</h2>
+
+        <p>
+            From elegant classics to wildly delicious creations,
+            there's something for every sweet occasion.
+        </p>
+
+    </div>
+
+
+    <div class="cake-grid">
+
+
+        <!-- CAKE 1 -->
+
+        <article class="cake-card">
+
+            <div class="cake-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=85"
+                alt="Strawberry cake">
+
+                <span class="badge">BESTSELLER</span>
+
+            </div>
+
+            <div class="cake-info">
+
+                <div class="cake-title">
+
+                    <h3>Strawberry Dream</h3>
+
+                    <span>$38</span>
+
+                </div>
+
+                <p>
+                    Vanilla sponge, fresh strawberries and silky cream.
+                </p>
+
+                <button onclick="selectCake('Strawberry Dream')">
+                    Order this cake →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAKE 2 -->
+
+        <article class="cake-card">
+
+            <div class="cake-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=85"
+                alt="Chocolate cake">
+
+            </div>
+
+            <div class="cake-info">
+
+                <div class="cake-title">
+
+                    <h3>Midnight Chocolate</h3>
+
+                    <span>$42</span>
+
+                </div>
+
+                <p>
+                    Rich chocolate sponge with Belgian chocolate ganache.
+                </p>
+
+                <button onclick="selectCake('Midnight Chocolate')">
+                    Order this cake →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAKE 3 -->
+
+        <article class="cake-card">
+
+            <div class="cake-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=85"
+                alt="Pink celebration cake">
+
+                <span class="badge">NEW</span>
+
+            </div>
+
+            <div class="cake-info">
+
+                <div class="cake-title">
+
+                    <h3>Blush Celebration</h3>
+
+                    <span>$45</span>
+
+                </div>
+
+                <p>
+                    Raspberry sponge, vanilla cream and rose petals.
+                </p>
+
+                <button onclick="selectCake('Blush Celebration')">
+                    Order this cake →
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="view-all">
+
+        <button onclick="showMessage()">
+            View full menu
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=900&q=85"
+        alt="Baker preparing cake">
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="small-title">OUR STORY</p>
+
+        <h2>Baked slowly.<br>Made lovingly.</h2>
+
+        <p>
+            Velvet Crumbs started with one tiny kitchen,
+            one very ambitious whisk and a love for making
+            celebrations a little sweeter.
+        </p>
+
+        <p>
+            Every cake is handcrafted in small batches using
+            quality ingredients, fresh fruits and plenty of
+            attention to detail.
+        </p>
+
+        <div class="stats">
+
+            <div>
+                <strong>2K+</strong>
+                <span>Cakes baked</span>
+            </div>
+
+            <div>
+                <strong>4.9★</strong>
+                <span>Average rating</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Made with love</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="reviews" id="reviews">
+
+    <div class="section-heading">
+
+        <p class="small-title">SWEET WORDS</p>
+
+        <h2>People are talking.</h2>
+
+    </div>
+
+
+    <div class="review-grid">
+
+        <div class="review">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “The cake was honestly the prettiest thing
+                at my birthday. And it tasted even better!”
+            </p>
+
+            <strong>— Maya R.</strong>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “The chocolate cake is dangerous.
+                I ordered one and somehow ate half of it.”
+            </p>
+
+            <strong>— Daniel K.</strong>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                “Beautiful presentation, amazing flavour
+                and the team was so lovely to work with.”
+            </p>
+
+            <strong>— Sarah M.</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <div>
+
+        <p class="small-title">LET'S MAKE SOMETHING SWEET</p>
+
+        <h2>Have a celebration coming up?</h2>
+
+        <p>
+            Tell us what you're dreaming of and we'll
+            help turn it into cake.
+        </p>
+
+    </div>
+
+    <button class="primary-btn" onclick="openOrder()">
+        Start Your Order →
+    </button>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        Velvet<span>Crumbs</span>
+    </div>
+
+    <p>Handcrafted cakes for life's sweetest moments.</p>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Velvet Crumbs. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- ORDER MODAL -->
+
+<div class="modal" id="orderModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeOrder()">×</button>
+
+        <p class="small-title">CUSTOM ORDER</p>
+
+        <h2>Let's bake your idea.</h2>
+
+        <form onsubmit="submitOrder(event)">
+
+            <input
+                type="text"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email address"
+                required
+            >
+
+            <select id="cakeSelect">
+
+                <option value="">Choose a cake</option>
+
+                <option>Strawberry Dream</option>
+
+                <option>Midnight Chocolate</option>
+
+                <option>Blush Celebration</option>
+
+                <option>Custom Design</option>
+
+            </select>
+
+            <input
+                type="date"
+                required
+            >
+
+            <textarea
+                placeholder="Tell us about your dream cake..."
+                rows="4"
+            ></textarea>
+
+            <button class="primary-btn" type="submit">
+                Send Order Request
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
